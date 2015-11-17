@@ -11,3 +11,12 @@ $dark-grey      : #4e4e4e;
 $white          : #ffffff;
 $bd-color       : #e3e3e3;
 $light-grey     : #bdbdbd;
+$black          : #000000;
+$lighten-grey   : #f6f6f6;
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
