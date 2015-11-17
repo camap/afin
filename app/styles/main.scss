@@ -3,87 +3,108 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "color";
+.main-menu {
+    background: $primary-color;
+    a {
+        color: $white;
+    }
+}
+.nav > li {
+    &.active {
+        background: $secondary-color;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            top: -3px;
+            left: 0;
+            background: $red;
+        }
+    }
+    a {
+        background: transparent;
+        &:hover {
+            background: transparent;
+        }
+    }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+}
+.top-slide {
+    margin-bottom: 90px;
 }
 
-/* Space out content a bit */
+.hot-prod {
+    h4 {
+        position: relative;
+        &:after {
+            content: '';
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            top: 13px;
+            left: 0;
+            background: $bd-color;
+            z-index: 0;
+        }
+        p {
+            position: relative;
+            padding-right: 10px;
+            color: $dark-grey;
+            background: $white;
+            display: inline-block;
+            z-index: 1;
+        }
+    }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
 }
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+    strong {
+        margin-bottom: 0.2em;
+        display: inline-block;
+    }
+    p {
+        margin-bottom: 0.5em;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.7em;
+        li {
+            list-style: none;
+        }
+        &.checked {
+            li {
+                padding-left: 25px;
+                background: url(../images/checked.png) no-repeat 0 5px;
+                background-size: 16px;
+            }
+        }
+        &.circle {
+            li {
+                padding-left: 15px;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    content: '';
+                    border-radius: 50%;
+                    background: $light-grey;
+                    width: 5px;
+                    height: 5px;
+                }
+            }
+        }
+    }
+    .more {
+        font-size: 0.8em;
+    }
 }
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+figure {
+    .title {
+        font-weight: bold;
+    }
 }
