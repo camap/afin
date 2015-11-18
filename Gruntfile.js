@@ -69,13 +69,13 @@ module.exports = function (grunt) {
         options: {
           files: [
             '<%= config.app %>/{,*/}*.html',
-            '.tmp/styles/{,*/}*.css',
+            '<%= config.dist %>/styles/{,*/}*.css',
             '<%= config.app %>/images/{,*/}*',
-            '.tmp/scripts/{,*/}*.js'
+            '<%= config.dist %>/scripts/{,*/}*.js'
           ],
           port: 9000,
           server: {
-            baseDir: ['.tmp', config.app],
+            baseDir: ['<%= config.dist %>', config.app],
             routes: {
               '/bower_components': './bower_components'
             }
@@ -149,7 +149,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= config.app %>/scripts',
           src: '{,*/}*.js',
-          dest: '.tmp/scripts',
+          dest: '<%= config.dist %>/scripts',
           ext: '.js'
         }]
       },
@@ -177,7 +177,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= config.app %>/styles',
           src: ['*.{scss,sass}'],
-          dest: '.tmp/styles',
+          dest: '<%= config.dist %>/styles',
           ext: '.css'
         }]
       }
@@ -198,7 +198,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.tmp/styles/',
           src: '{,*/}*.css',
-          dest: '.tmp/styles/'
+          dest: '<%= config.dist %>/styles/'
         }]
       }
     },

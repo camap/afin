@@ -13,7 +13,9 @@ $bd-color       : #e3e3e3;
 $light-grey     : #bdbdbd;
 $black          : #000000;
 $lighten-grey   : #f6f6f6;
-
+$light2         : #c2c2c2;
+$light3         : #f8f8f8;
+$bd-color2      : #83bbde;
 @mixin border-radius($radius) {
     border-radius: $radius;
     -webkit-border-radius: $radius;
