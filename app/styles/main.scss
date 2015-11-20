@@ -52,10 +52,12 @@ header {
             color: $light2;
             position: relative;
             font-size: 1.5em;
+            padding-right: 8px;
         }
         &:after {
             content: '”';
             top: 16px;
+            left-right: 8px;
         }
         .red {
             display: inline-block;
@@ -77,8 +79,53 @@ header {
     font-family: 'AvenirNext-Bold';
     font-size: 1.2em;
 }
+.social {
+    margin-bottom: 1em;
+    .glyphicon {
+        color: $primary-color;
+        margin-left: 3px;
+        &.glyphicon-video {
+            font-size: 1.2em;
+        }
+        &:hover {
+            color: $dark-grey;
+        }
+    }
+}
+.navbar-toggle .icon-bar {
+    background: $white;
+    transition: all .3s;
+    position: relative;
+}
+
+.navbar-toggle[aria-expanded="true"] {
+    .icon-bar:first-child {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 5px;
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    .icon-bar:nth-child(2) {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 0;
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+    .icon-bar:last-child {
+        opacity: 0;
+    }
+}
+
+.navbar-search {
+    width: 100%;
+}
 
 .search {
+    width: 100%;
     position: relative;
     color: $light-grey;
     font-size: 0.85em;
@@ -379,5 +426,19 @@ footer {
         margin-top: 0;
         border: none;
         margin-bottom: 0.5em;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .nav > li {
+        display: block;
+        width: 100%;
+        &:before {
+            content: none;
+        }
     }
 }
