@@ -30,7 +30,7 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 social">
+            <div class="col-lg-12 social hide-for-sm">
                 <div class="pull-right">
                     <a href="#"><span class="glyphicon glyphicon-facebook"></span></a>
                     <a href="#"><span class="glyphicon glyphicon-twitter"></span></a>
@@ -38,13 +38,13 @@
                     <a href="#"><span class="glyphicon glyphicon-google"></span></a>
                 </div>
             </div>
-            <div class="col-lg-9">
-                <a href="#"><img src="images/logo.png" alt="logo" title="logo" class="logo pull-left" />
+            <div class="col-lg-9 col-sm-12 text-center-for-sm">
+                <a href="#"><img src="images/logo.png" alt="logo" title="logo" class="logo pull-left" /></a>
                 <div class="slogan pull-left">Dưỡng tâm, giúp tạo <p class="red">giấc ngủ tự nhiên</p></div>
             </div>
             <div class="col-lg-3">
                 <form id="search" class="search navbar-search pull-right" method="post" action="">
-                    <span class="glyphicon glyphicon-search-new"></span>
+                    <span class="glyphicon glyphicon-search"></span>
                     <input type="text" name="txtSearch" value="" placeholder="Tìm kiếm" class="search-query" />
                 </form>
             </div>
@@ -53,25 +53,40 @@
 </header>
 <div class="clearfix"></div>
 <div class="container-fluid main-menu">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-brand"><span class="glyphicon glyphicon-search-new"></span></div>
-    </div>
-    <div class="container header navbar-collapse collapse" id="navbar" aria-expanded="false">
-        <ul class="nav nav-pills text-uppercase">
-            <li class="active"><a href="#">Trang chủ</a></li>
-            <li><a href="#">Giới thiệu</a></li>
-            <li><a href="#">sản phẩm</a></li>
-            <li><a href="#">Giấc ngủ ngon</a></li>
-            <li><a href="#">Hệ thống phân phối</a></li>
-            <li><a href="#">Hỏi đáp</a></li>
-            <li><a href="#">Tin tức & sự kiện</a></li>
-            <li><a href="#">Đặt hàng</a></li>
-        </ul>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="header navbar-collapse collapse" id="navbar" aria-expanded="false">
+            <ul class="nav nav-pills text-uppercase">
+                <li>
+                    <form id="search-menu" class="search navbar-search pull-right" method="post" action="">
+                        <span class="glyphicon glyphicon-search"></span>
+                        <input type="text" name="txtSearch" value="" placeholder="Tìm kiếm" class="search-query" />
+                    </form>
+                </li>
+                <li class="active"><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">sản phẩm</a></li>
+                <li><a href="#">Giấc ngủ ngon</a></li>
+                <li><a href="#">Hệ thống phân phối</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+                <li><a href="#">Tin tức & sự kiện</a></li>
+                <li><a href="#">Đặt hàng</a></li>
+            </ul>
+            <div class="col-lg-12 social">
+                <div class="text-center-for-sm">
+                    <a href="#"><span class="glyphicon glyphicon-facebook"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-twitter"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-video"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-google"></span></a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="clearfix"></div>
@@ -146,32 +161,32 @@
     </div>
 
     <div class="row marketing">
-        <div class="col-lg-6">
-            <div class="text-uppercase hot-prod"><h4><p>Nguyên nhân <strong>mất ngủ</strong></p></h4></div>
+        <div class="col-lg-6 col-sm-12 items">
+            <div class="col-lg-12 text-uppercase hot-prod"><h4><p>Nguyên nhân <strong>mất ngủ</strong></p></h4></div>
             <ul class="col-lg-12 col-sm-12 media-list">
                 <li class="media">
                     <a href="#"><img src="images/news3.png" alt="" class="img-responsive media-object" /></a>
                     <a href="#" class="media-heading hot">Các bệnh đau đầu thường gặp và các triệu chứng của nó</a>
                     <p>Các bệnh đau đầu thường gặp và các triệu chứng của nó Các bệnh đau đầu thường gặp và các triệu chứng của nó</p>
                 </li>
-                <li class="col-lg-12 media">
+                <li class="media">
                     <a href="#" class="pull-left"><img src="images/subnews1.png" alt="" class="media-object" /></a>
                     <div class="media-body">
                         <a href="#" class="media-heading">Các bệnh đau đầu thường gặp và các triệu chứng của nó</a>
                         <p>Các bệnh đau đầu thường gặp và các triệu chứng của nó</p>
                     </div>
                 </li>
-                <li class="col-lg-12 media">
+                <li class="media">
                     <a href="#" class="pull-left"><img src="images/subnews1.png" alt="" class="media-object" /></a>
                     <div class="media-body">
                         <a href="#" class="media-heading">Các bệnh đau đầu thường gặp và các triệu chứng của nó</a>
                         <p>Các bệnh đau đầu thường gặp và các triệu chứng của nó</p>
                     </div>
                 </li>
-                <li><a href="#" class="pull-right view-more">Đọc thêm <span class="glyphicon glyphicon-menu-right"></span></a> </li>
+                <li class="media"><a href="#" class="pull-right view-more">Đọc thêm <span class="glyphicon glyphicon-menu-right"></span></a> </li>
             </ul>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-sm-12 items">
             <div class="col-lg-12 text-uppercase hot-prod"><h4><p>Làm sao <strong>để có giấc ngủ ngon</strong></p></h4></div>
             <ul class="col-lg-12 col-sm-12 media-list">
                 <li class="media">
@@ -179,21 +194,21 @@
                     <a href="#" class="media-heading hot">Các bệnh đau đầu thường gặp và các triệu chứng của nó</a>
                     <p>Các bệnh đau đầu thường gặp và các triệu chứng của nó Các bệnh đau đầu thường gặp và các triệu chứng của nó</p>
                 </li>
-                <li class="col-lg-12 media">
+                <li class="media">
                     <a href="#" class="pull-left"><img src="images/subnews1.png"  alt="" class="media-object" /></a>
                     <div class="media-body">
                         <a href="#" class="media-heading">Các bệnh đau đầu thường gặp và các triệu chứng của nó</a>
                         <p>Các bệnh đau đầu thường gặp và các triệu chứng của nó</p>
                     </div>
                 </li>
-                <li class="col-lg-12 media">
+                <li class="media">
                     <a href="#" class="pull-left"><img src="images/subnews1.png"  alt="" class="media-object" /></a>
                     <div class="media-body">
                         <a href="#" class="media-heading">Các bệnh đau đầu thường gặp và các triệu chứng của nó</a>
                         <p>Các bệnh đau đầu thường gặp và các triệu chứng của nó</p>
                     </div>
                 </li>
-                <li><a href="#" class="pull-right view-more">Đọc thêm <span class="glyphicon glyphicon-menu-right"></span></a> </li>
+                <li class=" media"><a href="#" class="pull-right view-more">Đọc thêm <span class="glyphicon glyphicon-menu-right"></span></a> </li>
             </ul>
         </div>
     </div>
@@ -241,7 +256,7 @@
 <footer>
     <div class="container">
         <div class="row footer">
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12 items">
                 <ul class="unstyled">
                     <li class="title text-uppercase">Liên hệ</li>
                     <li><strong>Công ty TNHH Nga Việt</strong></li>
@@ -251,7 +266,7 @@
                     <li><span class="glyphicon glyphicon-envelope"></span> Email: </li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12 items">
                 <ul class="unstyled">
                     <li class="title text-uppercase">Sản phẩm</li>
                     <li><a href="#">Cách dùng</a></li>
