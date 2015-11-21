@@ -466,11 +466,14 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    .text-center-for-sm {
+    .text-center-for-sm{
         text-align: center;
     }
     .hide-for-sm {
         display: none;
+    }
+    .center-for-mobile {
+        float: none !important;
     }
     .social {
         margin-bottom: 1em;
@@ -522,6 +525,10 @@ footer {
     .marketing {
         .items {
             margin-bottom: 2em;
+        }
+        .img-responsive {
+            text-align: center;
+            margin: auto;
         }
     }
     footer {
