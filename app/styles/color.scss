@@ -16,20 +16,21 @@ $primary-color : #6e3089;
 $secondary-color: #86c03f;
 $dark-green     : #528416;
 $red            : #d71530;
-$dark-grey      : #4e4e4e;
+$dark-grey      : #3b3b3b;
 $white          : #ffffff;
 $bd-color       : #e3e3e3;
 $light-grey     : #bdbdbd;
 $black          : #000000;
-$lighten-grey   : #f6f6f6;
+$lighten-grey   : #fbfbfb;
 $light2         : #c2c2c2;
-$light3         : #f8f8f8;
+$light3         : #ececec;
 $bd-color2      : #83bbde;
 $bd-color3      : #2d86be;
+$footer-bg      : #f0f0f0;
+$intro          : #3a3a3a;
 @mixin border-radius($radius) {
     border-radius: $radius;
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
 }
-
